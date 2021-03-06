@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+#titlegame {
+    margin-top: 20px;
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+}
+
+p {
+    font: 800 14px 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    margin-left: 370px;
+}
+
+#game {
+    width: 500px;
+    height: 200px;
+    border: 2px solid black;
+    background: url(../images/bg-morning.png) no-repeat bottom;
+    background-size: cover;
+}
+
+#character {
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/eevee/level1.png);
+    background-size: cover;
+    position: relative;
+    top: 150px;
+    left: 20px;
+}
+
+.jump {
+    animation: jump 500ms;
+}
+
+@keyframes jump {
+    0% { top: 150px; }
+    30% { top: 100px; }
+    70% { top: 100px; }
+    100% { top: 150px; }
+}
+
+#game #block {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: 80%; 
+    background-image: url(https://media.discordapp.net/attachments/751228568138416188/753433254480314368/783-7831178_pokeball-pokeball-pixel-png.png?width=522&height=522);
+    position: relative;
+    top: 130px;
+    left: 480px;
+    animation: block 1s infinite linear;
+}
+
+@keyframes block {
+    0% { left: 480px; }
+    100% { left: -40px; }
+}

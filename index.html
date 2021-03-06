@@ -1,25 +1,33 @@
 <!DOCTYPE html>
-<html lang="en" onclick= "jump() ">
+<html lang="en" onclick= "jump()">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@500;600;700&display=swap" rel="stylesheet">
-
-    <div id= "titlegame">
-        <h1> Poke-Jump <img src="https://i.ibb.co/Jsx4nPY/Pokebola.png" width=”20” height=”20”/> </h1>
-    </div>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;800&display=swap" rel="stylesheet">
     
+    <title>Game</title>
 </head>
 <body>
-    <p>Pontuação: <span id="score"></span></p>
+
+    <div id="titlegame">
+        <span><img src="https://i.ibb.co/GcDg4PR/Pokebola.png" width="30" height="30"/> </span>
+        <span></span>
+        <span><img src="https://i.ibb.co/VQg5gNy/title-img.png" width="180" height="50"/> </span>
+        <span></span>
+        <span><img src="https://i.ibb.co/GcDg4PR/Pokebola.png" width="30" height="30"/> </span>  
+    </div>
+
+    <p>
+        Pontuação:
+        <span id="score"></span>
+    </p>
+
     <div id="game">
         <div id="character"></div>
         <div id="block"></div>
     </div>
+
+    <script src="/js/script.js"></script>
 </body>
-
-<script src="script.js"></script>
-
 </html>
